@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Course Portal</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+nav{
+    background:#34495e;
+    text-align:center;
+    padding:10px;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+.container{
+    width:80%;
+    margin:auto;
+    padding:20px;
+}
+.component{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:8px;
+    box-shadow:0 0 8px gray;
+}
+h2{
+    color:#2c3e50;
+}
+button{
+    background:#27ae60;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+button:hover{
+    background:#219150;
+}
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+}
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Online Course Portal</h1>
+<p>Learn New Skills Anytime, Anywhere</p>
+</header>
+<nav>
+<a href="#course">Course</a>
+<a href="#instructor">Instructor</a>
+<a href="#review">Review</a>
+<a href="#enrolment">Enrolment</a>
+</nav>
+<div class="container">
+<!-- Course Component -->
+<div class="component" id="course">
+<h2>Course</h2>
+<h3>Web Development using MERN Stack</h3>
+<p>Learn HTML, CSS, JavaScript, React, Node.js, Express.js and MongoDB from basics to advanced.</p>
+<p><b>Duration:</b> 12 Weeks</p>
+<p><b>Fee:</b> ₹5000</p>
+</div>
+<!-- Instructor Component -->
+<div class="component" id="instructor">
+<h2>Instructor</h2>
+<h3>Mr. Rahul Sharma</h3>
+<p>Senior Full Stack Developer with 10+ years of experience in MERN Stack Development.</p>
+</div>
+<!-- Review Component -->
+<div class="component" id="review">
+<h2>Student Reviews</h2>
+<p>⭐⭐⭐⭐⭐<br>
+"The course is very informative and easy to understand."</p>
+<p>⭐⭐⭐⭐☆<br>
+"Excellent instructor and practical examples."</p>
+</div>
+
+<!-- Enrolment Component -->
+<div class="component" id="enrolment">
+<h2>Enrolment Form</h2>
+<form>
+<label>Full Name</label>
+<input type="text" required>
+<label>Email</label>
+<input type="email" required>
+<label>Phone Number</label>
+<input type="tel" required>
+<label>Course Name</label>
+<input type="text" value="MERN Stack Development" readonly>
+<label>Why do you want to join?</label>
+<textarea rows="4"></textarea>
+<button type="submit">Enroll Now</button>
+</form>
+</div>
+</div>
+<footer>
+<p>&copy; 2026 Online Course Portal | All Rights Reserved</p>
+</footer>
+</body>
+</html>
